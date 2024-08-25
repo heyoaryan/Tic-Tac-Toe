@@ -1,0 +1,167 @@
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
+  background: -webkit-linear-gradient(top, #000000, #2c5c9b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5), 0px 0px 20px rgba(255, 255, 255, 0.3);
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Global Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Input Fields */
+
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+}
+
+input[type="text"]:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Player Turn Indicator */
+
+#player-turn {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Player Name Inputs */
+
+#player1-name, #player2-name {
+  text-align: center;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+#player1-name {
+  background-color: #ffffff;
+  border-color: #ddd;
+}
+
+#player2-name {
+  background-color: #ffffff;
+  border-color: #ccc;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+  #player1-name, #player2-name {
+    display: block;
+  }
+}
+
+.game-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #f7f7f7;
+}
+
+.cell.x {
+  background-color: #3671b0;
+  color: #fff;
+}
+
+.cell.o {
+  background-color: #121212;
+  color: #fff;
+}
+
+.game-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#game-status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.win {
+  background-color: #ff000
+}
+
+#reset-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#reset-button:hover {
+  background-color: #3e8e41;
+}
